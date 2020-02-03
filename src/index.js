@@ -4,14 +4,15 @@ import { HashRouter } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import "./assets/css/styles.scss";
-import "./assets/css/styles-xs.scss";
+import "assets/css/styles.scss";
+import "assets/css/styles-xs.scss";
+import "assets/fonts/fonts.css";
 
 import App from "./containers/Root";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <HashRouter>
+  <HashRouter basename="/my-scoot-page">
     <App />
   </HashRouter>,
   document.getElementById("root")
